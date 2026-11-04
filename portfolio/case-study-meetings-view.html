@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Meetings View on Mobile — Christy Chan</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body class="case-study-page">
+
+  <header class="site-header">
+    <nav class="nav">
+      <span class="nav-name">Christy Chan</span>
+      <span class="nav-divider">·</span>
+      <span class="nav-role">Product Designer, Microsoft OneDrive</span>
+    </nav>
+  </header>
+
+  <main>
+    <article>
+
+      <div class="cs-header">
+        <a href="index.html" class="cs-back">← Back</a>
+        <div class="cs-tag">OneDrive · Mobile · Productivity</div>
+        <h1>Meetings View on Mobile</h1>
+        <p class="subtitle">A dedicated meetings hub in OneDrive mobile that surfaces relevant meeting files, recordings, and notes in one place — reducing the friction of hunting across Teams, Outlook, and OneDrive after every call.</p>
+        <div class="cs-meta-row">
+          <span class="pill">Product Designer</span>
+          <span class="cs-meta-divider">·</span>
+          <span class="pill">Android</span>
+          <span class="pill">iOS</span>
+        </div>
+        <div class="cs-cover" style="background:var(--bg-warm);height:340px;border-radius:var(--radius);border:1px solid var(--border);margin-top:32px;"></div>
+      </div>
+
+      <div class="cs-body">
+        <div class="cs-main">
+
+          <div class="cs-section">
+            <h2><span class="emoji">🎯</span> Problem</h2>
+            <p>After a meeting, users had to hunt across Teams, Outlook, and OneDrive to find recordings, shared files, and notes — a fragmented experience that caused important content to go unfound and underused. OneDrive sat on all this meeting-adjacent data but had no surface that made it discoverable in context.</p>
+          </div>
+
+          <div class="cs-section">
+            <h2><span class="emoji">💡</span> Solution</h2>
+            <p>Designed a dedicated Meetings pivot in OneDrive Mobile — a hub that surfaces meeting files, recordings, and notes by meeting context rather than by file type or date. Research validated the mental model: users think "what was from that Thursday call?" not "where did I put that PPTX?"</p>
+          </div>
+
+          <div class="cs-section">
+            <h2><span class="emoji">🔀</span> Flows</h2>
+            <div class="flow-block">
+              <div class="flow-item">
+                <div class="flow-placeholder">[ Meetings pivot — grouped by meeting context ]</div>
+                <div class="flow-caption"><strong>Primary Flow</strong>Surfaces all files, recordings, and notes from a meeting together — one tap from any recent meeting in the hub.</div>
+              </div>
+              <div class="flow-item">
+                <div class="flow-placeholder">[ Meeting detail — files + recording + notes ]</div>
+                <div class="flow-caption"><strong>Meeting Detail</strong>Consolidated view of everything associated with a single meeting — no switching between apps to piece it together.</div>
+              </div>
+            </div>
+          </div>
+
+          <div class="cs-section">
+            <h2><span class="emoji">🧠</span> Key Decisions</h2>
+            <ul class="decision-list">
+              <li><strong>Organized by meeting context, not file type.</strong> Users think in meetings, not in file categories. Grouping by meeting rather than by recents or file type matched the actual mental model — validated in research.</li>
+              <li><strong>Tradeoff accepted: requires calendar integration.</strong> The pivot is only as useful as the meeting data it can access. Designed clearly for the connected-account state and the graceful empty state for users without calendar integration.</li>
+              <li><strong>Constraint designed around: cross-app data dependencies.</strong> Meeting files live in different services — Teams recordings in Teams, shared files in OneDrive, notes in Loop. Surface design had to work with partial data and degrade gracefully when not everything was available.</li>
+            </ul>
+          </div>
+
+          <div class="cs-section">
+            <h2><span class="emoji">🤝</span> Collaboration</h2>
+            <p>Worked with PM, Engineering, and Research. Coordinated with Teams and Outlook partners on data contracts for meeting file and recording surfacing. Led requirements documentation and spec delivery for the mobile pivot design.</p>
+          </div>
+
+          <div class="cs-section">
+            <h2><span class="emoji">📊</span> Impact</h2>
+            <div class="impact-callout">
+              <div class="impact-callout-label">Results</div>
+              <ul>
+                <li>Designed end-to-end meetings hub from research through production spec</li>
+                <li>Established OneDrive Mobile as a post-meeting destination, not just a file store</li>
+                <li>Cross-app data contracts with Teams and Outlook defined and documented for engineering</li>
+              </ul>
+            </div>
+          </div>
+
+          <div class="cs-section">
+            <h2><span class="emoji">📖</span> Learning</h2>
+            <div class="learning-block">Designing for cross-app data means designing for partial states first — the empty state and the degraded state are just as important as the ideal state, because users will hit them constantly during rollout.</div>
+          </div>
+
+          <div class="cs-section">
+            <h2><span class="emoji">🔗</span> Links</h2>
+            <div class="sidebar-links">
+              <a class="sidebar-link" href="#">Figma →</a>
+              <a class="sidebar-link" href="#">Prototype →</a>
+            </div>
+          </div>
+
+        </div>
+
+        <aside class="cs-sidebar">
+          <div class="sidebar-block">
+            <h2>Role</h2>
+            <p>Product Designer</p>
+          </div>
+          <div class="sidebar-block">
+            <h2>Platforms</h2>
+            <ul>
+              <li>Android</li>
+              <li>iOS</li>
+            </ul>
+          </div>
+          <div class="sidebar-block">
+            <h2>Team</h2>
+            <ul>
+              <li>PM</li>
+              <li>Engineering</li>
+              <li>Research</li>
+              <li>Teams / Outlook partners</li>
+            </ul>
+          </div>
+          <div class="sidebar-block">
+            <h2>Tools</h2>
+            <ul>
+              <li>Figma</li>
+              <li>Loop specs</li>
+            </ul>
+          </div>
+        </aside>
+      </div>
+
+    </article>
+  </main>
+
+  <footer class="site-footer">Christy Chan · Microsoft OneDrive Design</footer>
+  <script src="case-study-nav.js" defer></script>
+</body>
+</html>

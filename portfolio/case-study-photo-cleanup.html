@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>OneDrive Photo Clean Up — Christy Chan</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body class="case-study-page">
+
+  <header class="site-header">
+    <nav class="nav">
+      <span class="nav-name">Christy Chan</span>
+      <span class="nav-divider">·</span>
+      <span class="nav-role">Product Designer, Microsoft OneDrive</span>
+    </nav>
+  </header>
+
+  <main>
+    <article>
+
+      <div class="cs-header">
+        <a href="index.html" class="cs-back">← Index</a>
+        <div class="cs-tag">OneDrive · Photos · Storage · AI</div>
+        <h1>OneDrive Photo Clean Up</h1>
+        <p class="subtitle">A unified Manage Storage hub for OneDrive mobile — giving users one place to understand their quota, see what's consuming space, and take action to free it up.</p>
+        <div class="cs-meta-row">
+          <span class="pill">Product Designer</span>
+          <span class="cs-meta-divider">·</span>
+          <span class="pill">iOS</span>
+          <span class="pill">Android</span>
+          <span class="pill">AI-assisted</span>
+        </div>
+        <figure class="cs-hero">
+          <div class="cs-hero-stage">
+            <img src="images/photo-cleanup-hub.png" alt="Manage Storage hub with categories for freeing up space" />
+            <img src="images/photo-cleanup-selection.png" alt="Photo review grid with explicit selection before deletion" />
+          </div>
+          <figcaption>From understanding storage to deciding what to keep.</figcaption>
+        </figure>
+      </div>
+
+      <div class="cs-body">
+        <div class="cs-main">
+
+          <div class="cs-section">
+            <h2>Full storage, no clear next step</h2>
+            <p>Users running out of storage had no clear path forward. The goal: "Give user one place to understand quota, see upsell/upgrade options, and free up space." Previously, cleanup tools were buried in settings, quota was explained without helping users act, and there was no intelligent guidance on what was actually safe to delete.</p>
+            <p>The primary entry point — tapping the quota bar in the app drawer showing "4.0 GB used of 5 GB (80%)" — had nowhere meaningful to go. The storage breakdown (OneDrive, Videos, Documents, Loop, Outlook Attachments) was invisible to users at the moment they most needed it.</p>
+          </div>
+
+          <div class="cs-section">
+            <h2>Make space without losing confidence</h2>
+            <p>Designed a unified Manage Storage hub with AI-assisted cleanup categories — Large videos, Large photos, Blurry photos, and Duplicate photos — with a preview-first deletion flow and clear space-recovered feedback. Entry point: tapping the quota bar in the OneDrive app drawer.</p>
+          </div>
+
+          <div class="cs-section private-demo-section" data-private-demo="photos">
+            <div class="private-demo-heading">
+              <h2>Try the interaction</h2>
+              <span class="private-demo-badge">Local preview</span>
+            </div>
+            <p>Select blurry photos, review the running size total, and open or cancel the confirmation sheet.</p>
+            <div class="private-demo-disclosure">
+              Private design preview with sample data. Deletion is disabled; nothing is removed from this device or an account.
+            </div>
+            <div class="private-demo" data-demo-state="idle">
+              <button class="private-demo-load" type="button">Load interactive demo</button>
+              <p class="private-demo-status" role="status" aria-live="polite">The demo loads only from this device on localhost.</p>
+              <div class="private-demo-frame-wrap" hidden>
+                <iframe class="private-demo-frame" title="Interactive photo cleanup design preview"></iframe>
+              </div>
+            </div>
+          </div>
+
+          <div class="cs-section">
+            <h2>From storage pressure to a clear action</h2>
+            <div class="flow-block">
+              <div class="flow-item">
+                <div class="flow-img-phones">
+                  <img src="images/photo-cleanup-entry.png" alt="App drawer with quota bar" />
+                  <img src="images/photo-cleanup-hub.png" alt="Manage Storage hub" />
+                </div>
+                <div class="flow-caption"><strong>Entry point → Storage hub</strong>Tapping "4.0 GB used of 5 GB (80%)" in the app drawer leads to the storage hub — showing breakdown by OneDrive, Videos, Documents, Loop, Outlook Attachments, and other Microsoft apps.</div>
+              </div>
+              <div class="flow-item">
+                <div class="flow-img-phones">
+                  <img src="images/photo-cleanup-blurry.png" alt="Blurry photos category" />
+                  <img src="images/photo-cleanup-selection.png" alt="Photo selection grid" />
+                </div>
+                <div class="flow-caption"><strong>Cleanup flow</strong>Category cards surface cleanup opportunities: Large videos (25 GB / 4 videos), Large photos (14 GB), Blurry photos (10 MB / 16 items), Duplicates (5.5 MB / 26 items). Tap a category → select photos individually → confirm deletion to recycle bin.</div>
+              </div>
+              <div class="flow-item">
+                <div class="flow-img-phone-solo">
+                  <img src="images/photo-cleanup-detail-figma.png" alt="Photo detail screen with explicit options to hide an item from blurry-photo results or delete it" />
+                </div>
+                <div class="flow-caption"><strong>Individual photo actions</strong>A later Android Figma state makes the choices explicit at the item level: hide a photo from blurry results or delete it. This complements the selection flow above with a focused review state.</div>
+              </div>
+              <div class="flow-item">
+                <div class="flow-img-phone-solo">
+                  <img src="images/photo-cleanup-success.png" alt="You freed up 1.3 GB success state" />
+                </div>
+                <div class="flow-caption"><strong>Success state + integrated upsell</strong>"You freed up 1.3 GB — Well done!" Free trial CTA embedded below cleanup results — surfaces upgrade at the moment of storage awareness, not as a cold interrupt.</div>
+              </div>
+            </div>
+          </div>
+
+          <div class="cs-section">
+            <h2>Designing for trust</h2>
+            <ul class="decision-list">
+              <li><strong>Preview before delete, always.</strong> Every cleanup category shows individual file sizes and requires explicit selection before deletion. The confirmation reads "They will be moved to the recycle bin" — not permanently deleted. This was the single most important trust mechanism.</li>
+              <li><strong>Reframed to "Free Up Space" language.</strong> Task-oriented language that met users at their goal, not the system's model of storage management. "Free Up Space" vs "Manage Storage" tested significantly better in comprehension.</li>
+              <li><strong>Category cards over raw file lists.</strong> Surfacing "Large videos (25 GB / 4 videos)" is more actionable than a flat file list. Users immediately understand the highest-impact cleanup action without digging.</li>
+              <li><strong>Upsell embedded, not interruptive.</strong> "Not ready to buy? Try 100 GB for free" lives at the bottom of the hub — present at the moment of storage awareness, but never blocking the cleanup flow.</li>
+              <li><strong>Designed around Graph API constraint.</strong> "The Graph API isn't available for consumers just yet" — the hub design was scoped to what was technically available for V1, with storage breakdown architecture designed to expand as API coverage grew.</li>
+            </ul>
+          </div>
+
+          <div class="cs-section">
+            <h2>Working across design and ML</h2>
+            <p>Collaborated with design partners on the core experience and active explorations. Worked with PM, ML/Engineering on blurry photo detection thresholds and Graph API constraints. Led dogfood validation across iOS and Android before broader rollout.</p>
+          </div>
+
+          <div class="cs-section">
+            <h2>What we delivered and learned</h2>
+            <div class="impact-callout">
+              <div class="impact-callout-label">Results</div>
+              <ul>
+                <li>Designed end-to-end Manage Storage hub — from quota bar entry to "You freed up 1.3 GB" success state</li>
+                <li>54% precision / 28.6% recall on blurry photo detection — accepted tradeoff to ship UX learning before ML matures</li>
+                <li>~100 dogfood users validated flow on iOS + Android</li>
+                <li>Blurry photos (10 MB / 16 items), Duplicates (5.5 MB / 26 items), Large photos (14 GB), Large videos (25 GB) — real cleanup opportunities surfaced per user</li>
+                <li>Integrated "Try 100 GB free" upsell at peak storage-awareness moment</li>
+              </ul>
+            </div>
+            <div class="metrics-row">
+              <div class="metric-stat"><div class="num">54%</div><div class="lbl">Blurry photo detection precision</div></div>
+              <div class="metric-stat"><div class="num">4</div><div class="lbl">Cleanup categories: videos, photos, blurry, duplicates</div></div>
+              <div class="metric-stat"><div class="num">~100</div><div class="lbl">Dogfood users on iOS + Android</div></div>
+            </div>
+          </div>
+
+          <div class="cs-section">
+            <h2>Confidence comes before cleanup</h2>
+            <div class="learning-block">Cleanup flows live or die on confidence — preview-first with recycle bin recovery wasn't a nice-to-have, it was what made users willing to act at all.</div>
+          </div>
+
+        </div>
+
+        <aside class="cs-sidebar">
+          <div class="sidebar-block">
+            <h2>Role</h2>
+            <p>Product Designer</p>
+          </div>
+          <div class="sidebar-block">
+            <h2>Platforms</h2>
+            <ul>
+              <li>iOS (primary)</li>
+              <li>Android</li>
+            </ul>
+          </div>
+          <div class="sidebar-block">
+            <h2>Team</h2>
+            <ul>
+              <li>Product Design</li>
+              <li>Design Explorations</li>
+              <li>ML / Engineering</li>
+              <li>PM</li>
+            </ul>
+          </div>
+          <div class="sidebar-block">
+            <h2>Tools</h2>
+            <ul>
+              <li>Figma</li>
+              <li>Loop specs</li>
+              <li>Nezha dashboards</li>
+            </ul>
+          </div>
+        </aside>
+      </div>
+
+    </article>
+  </main>
+
+  <footer class="site-footer">Christy Chan · Microsoft OneDrive Design</footer>
+  <script src="demo-loader.js" defer></script>
+  <script src="case-study-nav.js" defer></script>
+</body>
+</html>

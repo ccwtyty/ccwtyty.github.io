@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Photostack — Christy Chan</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body class="case-study-page">
+
+  <header class="site-header">
+    <nav class="nav">
+      <span class="nav-name">Christy Chan</span>
+      <span class="nav-divider">·</span>
+      <span class="nav-role">Product Designer, Microsoft OneDrive</span>
+    </nav>
+  </header>
+
+  <main>
+    <article>
+
+      <div class="cs-header">
+        <a href="index.html" class="cs-back">← Back</a>
+        <div class="cs-tag">OneDrive · Photos · AI</div>
+        <h1>Photostack</h1>
+        <p class="subtitle">A native iOS photo management experience within OneDrive — surfacing and organizing personal photo libraries through AI-assisted grouping, with trust as the central design constraint.</p>
+        <div class="cs-meta-row">
+          <span class="pill">Product Designer</span>
+          <span class="cs-meta-divider">·</span>
+          <span class="pill">iOS</span>
+          <span class="pill">AI</span>
+          <span class="pill">Photos Refresh</span>
+        </div>
+        <img class="cs-cover" src="images/photostack-intro.png" alt="Photostack — iOS intro sheet" />
+      </div>
+
+      <div class="cs-body">
+        <div class="cs-main">
+
+          <div class="cs-section">
+            <h2><span class="emoji">🎯</span> Problem</h2>
+            <p>Photo organization lacked clarity and discoverability — earlier explorations needed refinement to align with updated technical constraints and product direction, without dedicated PM support. Mis-grouping from AI was the #1 abandonment driver: when stacks were wrong, users lost confidence in the entire experience and stopped taking cleanup actions altogether.</p>
+          </div>
+
+          <div class="cs-section">
+            <h2><span class="emoji">💡</span> Solution</h2>
+            <p>Led design refinement for Photostacks on iOS — translating early concepts into production-ready flows that improved usability and cross-platform consistency. Held the Photostack surface until ML detection quality met UX thresholds, protecting long-term trust over short-term ship velocity. Advocated for terminology and labels that were intuitive across regions and user types.</p>
+          </div>
+
+          <div class="cs-section">
+            <h2><span class="emoji">🔀</span> Flows</h2>
+            <div class="flow-block">
+              <div class="flow-item">
+                <div class="flow-img-phone-solo">
+                  <img src="images/photostack-intro.png" alt="iOS intro sheet — Similar Photos are Stacked" />
+                </div>
+                <div class="flow-caption"><strong>Feature onboarding</strong>"Similar Photos are Stacked — Stacks are groups of photos that reduce clutter." A single-screen intro sheet (Fluent 2 iOS, brand gradient background) with a "Got it" accent CTA — sets the mental model before the user encounters their first stack.</div>
+              </div>
+              <div class="flow-item">
+                <div class="flow-placeholder">[ Stack badge — photo count indicator ]</div>
+                <div class="flow-caption"><strong>Stacked photo badge</strong>A count badge overlaid on the stack thumbnail (Shared/Badges/Stacked component) signals that a group exists without requiring the user to tap first — glanceability before interaction.</div>
+              </div>
+              <div class="flow-item">
+                <div class="flow-placeholder">[ Stack expanded — review grouped photos ]</div>
+                <div class="flow-caption"><strong>Stack browsing</strong>Tap to expand and review the grouped photos. Never auto-collapse or auto-delete — the user decides what stays.</div>
+              </div>
+            </div>
+          </div>
+
+          <div class="cs-section">
+            <h2><span class="emoji">🧠</span> Key Decisions</h2>
+            <ul class="decision-list">
+              <li><strong>Single-screen onboarding over a tour.</strong> The intro sheet ("Similar Photos are Stacked — Stacks are groups of photos that reduce clutter.") communicates the entire mental model in two sentences. A modal tour would have felt heavier than the feature itself.</li>
+              <li><strong>Transparency over magic.</strong> Every stack explains its grouping logic — not an unnamed AI grouping. Early "magic" framing backfired when groupings were wrong; transparent reasoning ("similar photos") maintained trust even at imperfect accuracy.</li>
+              <li><strong>Glanceability via badge, not label.</strong> The stacked count badge surfaces the group without requiring interaction. Users can scan their photo grid and immediately see which thumbnails contain multiples — reducing cognitive load at browsing time.</li>
+              <li><strong>Held the surface until quality met thresholds.</strong> Recommended pausing Photostack launch until ML detection accuracy stabilized. Unpopular short-term call; the right long-term one — a broken AI grouping experience would have required twice the trust rebuilding.</li>
+              <li><strong>Progress without perfect inputs.</strong> Advanced design to production-ready specs despite ambiguous PM ownership and shifting technical constraints — design became the unblocking function.</li>
+            </ul>
+          </div>
+
+          <div class="cs-section">
+            <h2><span class="emoji">🤝</span> Collaboration</h2>
+            <p>Worked directly with Engineering to unblock progress in the absence of dedicated PM support. Delivered DevMode specs and redlines, supported implementation training, and coordinated with the broader Photos team on cross-platform consistency.</p>
+          </div>
+
+          <div class="cs-section">
+            <h2><span class="emoji">📊</span> Impact</h2>
+            <div class="impact-callout">
+              <div class="impact-callout-label">Results</div>
+              <ul>
+                <li>Design delivered on tight timelines despite ambiguous ownership structure</li>
+                <li>Enabled engineering ramp-up without PM dependency — design became the unblocking function</li>
+                <li>Positioned Photos for future engagement improvements through production-ready specs and clear component contracts</li>
+                <li>Deliberate hold on Photostack surface protected trust — prevented shipping a broken AI experience that would have required twice the effort to rebuild</li>
+              </ul>
+            </div>
+          </div>
+
+          <div class="cs-section">
+            <h2><span class="emoji">📖</span> Learning</h2>
+            <div class="learning-block">Momentum matters — clear ownership and visibility can offset missing structure, and holding a feature is a design decision just as much as shipping one.</div>
+          </div>
+
+          <div class="cs-section">
+            <h2><span class="emoji">🔗</span> Links</h2>
+            <div class="sidebar-links">
+              <a class="sidebar-link" href="#">Figma →</a>
+            </div>
+          </div>
+
+        </div>
+
+        <aside class="cs-sidebar">
+          <div class="sidebar-block">
+            <h2>Role</h2>
+            <p>Product Designer</p>
+          </div>
+          <div class="sidebar-block">
+            <h2>Platforms</h2>
+            <ul>
+              <li>iOS (primary)</li>
+              <li>Web</li>
+              <li>Android</li>
+            </ul>
+          </div>
+          <div class="sidebar-block">
+            <h2>Team</h2>
+            <ul>
+              <li>Engineering</li>
+              <li>Photos team</li>
+              <li>ML</li>
+            </ul>
+          </div>
+          <div class="sidebar-block">
+            <h2>Tools</h2>
+            <ul>
+              <li>Figma</li>
+              <li>Figma Make</li>
+              <li>Loop specs</li>
+            </ul>
+          </div>
+        </aside>
+      </div>
+
+    </article>
+  </main>
+
+  <footer class="site-footer">Christy Chan · Microsoft OneDrive Design</footer>
+  <script src="case-study-nav.js" defer></script>
+</body>
+</html>
